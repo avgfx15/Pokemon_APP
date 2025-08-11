@@ -1,0 +1,65 @@
+/* | Get Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Tailwind Basic CSS  */
+
+@import 'tailwindcss';
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+  }
+}
+
+/* Theme Change With TailwindCSS */
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-extra: var(--color-extra);
+
+  --text-color-primary: var(--text-color-primary);
+  --text-color-secondary: var(--text-color-secondary);
+  --text-color-extra: var(--text-color-extra);
+}
+
+/* Theme Variants  */
+
+.theme_dark {
+  --color-primary: #1b1b1b;
+  --color-secondary: #555;
+  --color-extra: #777;
+
+  --text-color-primary: #fff;
+  --text-color-secondary: #ddd;
+  --text-color-extra: #ccc;
+}
+
+.theme_light {
+  --color-primary: #eeeeee;
+  --color-secondary: #a7a7a7;
+  --color-extra: #777;
+
+  --text-color-primary: #0f0f0f;
+  --text-color-secondary: #5a5a5a;
+  --text-color-extra: #ccc;
+}
+
+.theme_Pink {
+  --color-primary: #ff69b4;
+  --color-secondary: #ff99cc;
+  --color-extra: #ffccff;
+
+  --text-color-primary: #000;
+  --text-color-secondary: #000;
+  --text-color-extra: #000;
+}
